@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Customer do login and he finish to buy" skipped="0" tests="1" time="14.21" timestamp="2023-05-15 05:10:13"><testcase name="Usuario ingresa texto en letra negrilla"><error message="No such field com.devco.test.models.NotasModelo.nota" type="cucumber.runtime.CucumberException">No such field com.devco.test.models.NotasModelo.nota</error><system-err>No such field com.devco.test.models.NotasModelo.nota&#13;
+cucumber.runner.Runner.runPickle(Runner.java:80)&#13;
+</system-err></testcase></testsuite>

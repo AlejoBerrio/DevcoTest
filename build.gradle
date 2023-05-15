@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+apply plugin: 'java'
+apply plugin: 'idea'
+
+dependencies {
+    // Dependencias para automatizar con Serenity
+    implementation 'net.serenity-bdd:serenity-junit:2.0.80'
+    implementation 'net.serenity-bdd:serenity-cucumber:1.9.45'
+    implementation 'net.serenity-bdd:serenity-core:2.0.80'
+    implementation 'org.apache.poi:poi-ooxml:3.17'
+
+    // Dependencias de pruebas
+    testImplementation 'junit:junit:4.12'
+    testImplementation 'org.assertj:assertj-core:3.6.2'
+    testImplementation "io.github.bonigarcia:webdrivermanager:5.2.0"
+}
