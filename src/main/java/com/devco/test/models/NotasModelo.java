@@ -3,18 +3,18 @@ package com.devco.test.models;
 public class NotasModelo {
 
     private String tipoNota;
-    private String texto;
+    private String nota;
 
-    public NotasModelo(String tipoNota, String texto) {
+    public NotasModelo(String tipoNota, String nota) {
         this.tipoNota = tipoNota;
-        this.texto = texto;
+        this.nota = nota;
     }
 
     public String getTipoNota() {
         return tipoNota;
     }
 
-    public String getTexto() {
-        return texto;
+    public String getNota() {
+        return nota;
     }
 }

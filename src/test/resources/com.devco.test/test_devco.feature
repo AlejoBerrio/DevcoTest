@@ -13,5 +13,5 @@ Feature: Customer do login and he finish to buy
 
 
     Examples:
-      | nota                      | nota                                              |
-      | Nota de texto enriquecido | Prueba de automatización Devco. Texto en negrilla |
+      | tipoNota    | nota                                              |
+      | enriquecido | Prueba de automatización Devco. Texto en negrilla |

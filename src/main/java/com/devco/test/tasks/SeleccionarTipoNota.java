@@ -10,11 +10,9 @@ import net.serenitybdd.screenplay.actions.Click;
 public class SeleccionarTipoNota implements Task {
 
     private String tipoNota;
-    private String texto;
 
     public SeleccionarTipoNota(NotasModelo notasModelo) {
         this.tipoNota = notasModelo.getTipoNota();
-        this.texto = notasModelo.getTexto();
     }
 
     @Override

@@ -6,20 +6,21 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Click;
+import net.serenitybdd.screenplay.actions.Enter;
 
 public class InsertarTexto implements Task {
 
-    private String texto;
+    private String nota;
 
     public InsertarTexto(NotasModelo notasModelo) {
-        this.texto = notasModelo.getTexto();
+        this.nota = notasModelo.getNota();
     }
 
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
-                Click.on(SelectXpathUserInterface.NOTA_INPUT.of(texto)
-                ));
+                Enter.theValue(nota).into(SelectXpathUserInterface.NOTA_INPUT)
+        );
     }
 
     public static InsertarTexto conTexto(NotasModelo notasModelo) {
